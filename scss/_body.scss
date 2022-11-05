@@ -1,5 +1,7 @@
 body{
     background-color: $color-4-group-1;
     overflow: scroll;
-    
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }

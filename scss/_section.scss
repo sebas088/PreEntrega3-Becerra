@@ -3,11 +3,11 @@ section{
     background-color: $color-1-group-1;
     width: 100%;
     height: 100vh;
-    margin-left: 10px;
+    // margin-left: 10px;
     border-radius: 5px;
     text-shadow: 0px 1px 1px $color-5-group-1;
     overflow: scroll;
-    
+    overflow-x: hidden;
 }
 
 figcaption{
@@ -55,40 +55,44 @@ figcaption{
     height: 400px;
     width: 600%;
     margin-left: -100%;
-}
-.slider__section {
-    width: 100%;
-}
-.slider__img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.slider__btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: $color-9-group-1;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: monospace;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-        background: $color-8-group-1;
+
+    &__section {
+        width: 100%;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: $color-9-group-1;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background: $color-8-group-1;
+        }
+
+        &--left {
+            left: 10px;
+        }
+        &--right {
+            right: 10px;
+        }
     }
 }
 
-.slider__btn--left {
-    left: 10px;
-}
-.slider__btn--right {
-    right: 10px;
-}
+
+
 
 #images-slider{
     /* width: 400px; */
@@ -177,8 +181,8 @@ figcaption{
         width: 100%;
         max-width: 1500px;
         height: 100vh;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 10px;
         padding-top:40px;
         padding-left: 100px;
@@ -188,34 +192,31 @@ figcaption{
         position: relative;
     }
 
-    #nombre {
-        margin-top: 20px;
-        margin-bottom: 20px;
+
+    .casilla {
+        margin-top: 10px;
+        margin-bottom: 10px;
         display: block;
+    }
+
+    #nombre {
+        @extend .casilla;
     }
 
     #apellido {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
+        @extend .casilla;
     }
 
     #email {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
+        @extend .casilla;
     }
 
     #tel {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
+        @extend .casilla;
     }
 
     #direccion {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
+        @extend .casilla;
     }
 
     #requisitos {
