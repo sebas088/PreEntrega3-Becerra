@@ -20,7 +20,7 @@ body{
     
 }
 
-/* HEADER */
+/* INICIO HEADER */
 header{
     background-color: antiquewhite;
     border-radius: 5px;
@@ -33,8 +33,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+/* FIN HEADER */
 
-/*LOGO*/
+
+/* INICIO LOGO */
 h1 {
     font-family:'mifuente';
     font-size: 50px;
@@ -48,8 +50,10 @@ h1 {
 span {
     color: #27CE37;
 }
+/* FIN LOGO */
 
-/*NAV*/
+
+/* INICIO NAV */
 .enlaces {
     color: #000;
     margin-bottom: 30px;
@@ -86,10 +90,12 @@ span {
 #check{
     display: none;
 }
+/* FIN NAV */
 
-/*RESPONSIVE*/
+
+/* INICIO RESPONSIVE */
 @media(max-width: 768px){
-    /*HEADER*/
+    /* RESPONSIVE HEADER */
     .mostrar-menu,
     .esconder-menu{
         display: block;
@@ -122,17 +128,13 @@ span {
         right: 0;
 
     }
+    /* FIN RESPONSIVE HEADER */
 }
+/* FIN RESPONSIVE */
 
 
 
-
-
-/* fin header */
-
-
-
-
+/* INICIO SECTION */
 section{
     background-color: antiquewhite;
     width: 100%;
@@ -143,7 +145,33 @@ section{
     overflow: scroll;
     
 }
-/* inicio_slider */
+
+figcaption{
+    font-family:'mifuente';
+    text-align: center;
+}
+
+.article_sections {
+    float: left;
+    display: inline;
+    margin-left: 120px;
+    margin-left: 50px;
+    margin-top: 60px;
+    /* background-color: tomato; */
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+}
+
+#article-mouse:hover{
+	-webkit-transform:scale(1.2);
+}
+
+#img-sections{
+	border:solid #000;
+	border-radius:15px;
+	box-shadow: #666 5px 5px 5px;
+}
+/* fin_sections */
+/* INICIO SECTION SLIDER */
 .container__slider {
     width: 90%;
     height: 400px;
@@ -201,34 +229,10 @@ section{
     
 
 }
-/* fin_slider */
+/* FIN SECTION SLIDER */
 
 /* inicio_sections */
-.article_sections {
-    float: left;
-    display: inline;
-    margin-left: 120px;
-    margin-left: 50px;
-    margin-top: 60px;
-    /* background-color: tomato; */
-    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
-}
 
-#article-mouse:hover{
-	-webkit-transform:scale(1.2);
-}
-
-#img-sections{
-	border:solid #000;
-	border-radius:15px;
-	box-shadow: #666 5px 5px 5px;
-}
-
-figcaption{
-    font-family:'mifuente';
-    text-align: center;
-}
-/* fin_sections */
 
 /* inicio_section_dogs */
 .title_dogs {
